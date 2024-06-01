@@ -68,11 +68,8 @@ La estructura del proyecto es la siguiente:
 chambalancer/
 │
 ├── backend/
-│   ├── controllers/
 │   ├── models/
-│   ├── routes/
 │   ├── index.js
-│   ├── .env
 │   └── package.json
 │
 ├── frontend/
@@ -85,7 +82,6 @@ chambalancer/
 │   │   ├── index.tsx
 │   │   └── styles/
 │   │       └── global.css
-│   ├── .env
 │   ├── package.json
 │   └── vite.config.ts
 │
