@@ -2,8 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/global.css';
 
+interface Service {
+  _id: string;
+  name: string;
+  description: string;
+  price: number;
+  author: string;
+}
+
 const Services: React.FC = () => {
-  const [services, setServices] = useState([]);
+  const [services, setServices] = useState<Service[]>([]);
   const navigate = useNavigate();
   const username = localStorage.getItem('username');
 
