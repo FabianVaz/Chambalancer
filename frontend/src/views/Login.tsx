@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/global.css';
+import chambalancerIcon from '../icons/chambalancer-icon.png';
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -37,7 +38,8 @@ const Login: React.FC = () => {
       <header className="header">
         <h1>Chambalancer</h1>
       </header>
-      <main>
+      <main style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <img src={chambalancerIcon} alt="Chambalancer Icon" style={{ width: '150px', height: '150px', marginBottom: '20px' }} />
         <h2 style={{ color: 'var(--primary-color)' }}>Login</h2>
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', width: '300px' }}>
           <input
