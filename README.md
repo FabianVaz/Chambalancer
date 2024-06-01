@@ -80,6 +80,7 @@ chambalancer/
 │   └── vite.config.ts
 │
 └── README.md
+```
 
 ## Uso del Proyecto
 Login: Los usuarios pueden iniciar sesión con su correo electrónico y contraseña.
