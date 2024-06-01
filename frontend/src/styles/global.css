@@ -24,6 +24,7 @@ button {
   border-radius: 4px;
   color: white;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button.primary {
@@ -39,6 +40,10 @@ button.tertiary {
   color: black;
 }
 
+button.primary:hover, button.secondary:hover, button.tertiary:hover {
+  opacity: 0.8;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -46,6 +51,8 @@ button.tertiary {
   justify-content: space-between;
   min-height: 100vh;
   background-color: white;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .header {
@@ -88,13 +95,19 @@ button.tertiary {
   text-decoration: underline;
 }
 
-.back-button {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 20px;
+  box-sizing: border-box;
 }
 
-/* Estilos para los contenedores de servicios */
+.back-button {
+  margin: 10px 0; /* Add margin to position the button */
+  color: black;
+}
+
 .service-container {
   background-color: #f0f0f0; /* Color gris claro */
   padding: 1rem;
@@ -112,7 +125,6 @@ button.tertiary {
   margin: 0.5rem 0;
 }
 
-/* Eliminar puntos de la lista de servicios */
 ul {
   list-style-type: none;
   padding: 0;
@@ -120,4 +132,40 @@ ul {
 
 li {
   margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .navbar button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .welcome {
+    margin: 10px 0;
+    align-self: flex-start;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .header, .footer {
+    padding: 10px;
+  }
+
+  .button-container {
+    padding: 10px;
+  }
 }

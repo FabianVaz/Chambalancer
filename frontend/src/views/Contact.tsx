@@ -24,9 +24,9 @@ const Contact: React.FC = () => {
       </header>
       <main>
         <h2>Contact</h2>
-        <p>Get in touch with us for more information.</p>
+        <p>Ponte en contacto conmigo.</p>
         <p>Email: 20460323@colima.tecnm.mx</p>
-        <h3>Name: Luis Fabián Vázquez Rodríguez || Student ID: 20460323</h3>
+        <h3>Name: Luis Fabián Vázquez Rodríguez || Número de control: 20460323</h3>
         <h4>Tecnológico Nacional de México - Colima</h4>
       </main>
       <footer className="footer">

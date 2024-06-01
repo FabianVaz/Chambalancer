@@ -21,16 +21,15 @@ const Register: React.FC = () => {
         body: JSON.stringify({ firstName, lastName, email, phoneNumber, password }),
       });
       const data = await response.json();
-      console.log(data);
       if (response.ok) {
-        alert('User registered successfully');
+        alert('Registration successful');
         navigate('/login');
       } else {
         alert(`Error: ${data.error}`);
       }
     } catch (error) {
       console.error('Error:', error);
-      alert('An error occurred while registering the user');
+      alert('An error occurred while registering');
     }
   };
 
@@ -39,36 +38,33 @@ const Register: React.FC = () => {
       <header className="header">
         <h1>Chambalancer</h1>
       </header>
+      <div className="button-container">
+        <button className="back-button" onClick={() => navigate('/login')}>Regresar</button>
+      </div>
       <main>
-        <button
-          onClick={() => navigate('/login')}
-          className="tertiary back-button"
-        >
-          Regresar
-        </button>
         <h2 style={{ color: 'var(--primary-color)' }}>Registro</h2>
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', width: '300px' }}>
           <input
             type="text"
-            placeholder="Nombre(s)"
+            placeholder="Nombre"
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
           />
           <input
             type="text"
-            placeholder="Apellido(s)"
+            placeholder="Apellido"
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
           />
           <input
             type="email"
-            placeholder="Correo Electrónico"
+            placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <input
-            type="tel"
-            placeholder="Número de Teléfono"
+            type="text"
+            placeholder="Número de teléfono"
             value={phoneNumber}
             onChange={(e) => setPhoneNumber(e.target.value)}
           />
@@ -78,16 +74,13 @@ const Register: React.FC = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button type="button" className="secondary">
-            Subir Foto de Perfil
-          </button>
           <button type="submit" className="primary">
-            Registrarse
+            Registrarme
           </button>
         </form>
       </main>
       <footer className="footer">
-        <p>© 2024 Chambalancer. All rights reserved.</p>
+        <p>© 2024 Chambalancer. All rights reserved. <a href="/about">About</a> | <a href="/contact">Contact</a></p>
       </footer>
     </div>
   );
