@@ -1,13 +1,8 @@
-import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import App from '../App';
 
-describe('App', () => {
-  it('renders headline', () => {
-    render(<App title="React" />);
-
-    screen.debug();
-
-    // check if App components renders headline
-  });
+test('renders headline', () => {
+  render(<App />);
+  const headlineElement = screen.getByText(/Chambalancer/i);
+  expect(headlineElement).toBeInTheDocument();
 });
