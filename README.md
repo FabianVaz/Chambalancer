@@ -16,100 +16,6 @@ Chambalancer es una plataforma web para la publicación y gestión de servicios.
     ```bash
     git clone https://github.com/tu-usuario/chambalancer.git
     cd chambalancer
-    ```
-
-2. Instala las dependencias del proyecto:
-    ```bash
-    npm install
-    ```
-
-### Configuración del Backend
-
-1. Navega al directorio del backend:
-    ```bash
-    cd backend
-    ```
-
-2. Crea un archivo `.env` en el directorio `backend` con el siguiente contenido:
-    ```env
-    PORT=3000
-    MONGO_URI=tu_mongodb_uri
-    JWT_SECRET=tu_secreto_para_jwt
-    ```
-
-3. Inicia el servidor backend:
-    ```bash
-    npm start
-    ```
-
-### Configuración del Frontend
-
-1. Navega al directorio del frontend:
-    ```bash
-    cd frontend
-    ```
-
-2. Inicia el servidor frontend:
-    ```bash
-    npm run dev
-    ```
-
-### Ejecución
-
-1. Abre tu navegador y navega a `http://localhost:5173` para acceder a la aplicación.
-
-## Descripción del Proyecto
-
-### Estructura del Proyecto
-
-La estructura del proyecto es la siguiente:
-
-```plaintext
-chambalancer/
-│
-├── backend/
-│   ├── models/
-│   ├── index.js
-│   └── package.json
-│
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── views/
-│   │   ├── icons/
-│   │   ├── App.tsx
-│   │   ├── index.tsx
-│   │   └── styles/
-│   │       └── global.css
-│   ├── package.json
-│   └── vite.config.ts
-│
-└── README.md
-
-
-Aquí tienes un ejemplo de cómo podría ser el archivo README.md para tu proyecto:
-
-markdown
-Copiar código
-# Chambalancer
-
-Chambalancer es una plataforma web para la publicación y gestión de servicios. Los usuarios pueden registrarse, iniciar sesión, publicar servicios y ver los servicios publicados por otros usuarios.
-
-## Instrucciones de Instalación y Ejecución
-
-### Prerrequisitos
-
-- Node.js (versión 14 o superior)
-- npm (versión 6 o superior)
-- MongoDB (instalado y en ejecución)
-
-### Instalación
-
-1. Clona este repositorio en tu máquina local:
-    ```bash
-    git clone https://github.com/tu-usuario/chambalancer.git
-    cd chambalancer
     cd frontend
     ```
 
@@ -156,11 +62,8 @@ La estructura del proyecto es la siguiente:
 chambalancer/
 │
 ├── backend/
-│   ├── controllers/
 │   ├── models/
-│   ├── routes/
 │   ├── index.js
-│   ├── .env
 │   └── package.json
 │
 ├── frontend/
@@ -173,7 +76,6 @@ chambalancer/
 │   │   ├── index.tsx
 │   │   └── styles/
 │   │       └── global.css
-│   ├── .env
 │   ├── package.json
 │   └── vite.config.ts
 │
