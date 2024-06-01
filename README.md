@@ -117,6 +117,6 @@ Para ejecutar las pruebas del frontend:
     ```bash
     npm run test
     ```
-
-![url].https://drive.google.com/file/d/1y056d-rZtVN3DguiTIYX0mz3OOGdSbgR/view?usp=sharing
+## Link del vídeo
+https://drive.google.com/file/d/1y056d-rZtVN3DguiTIYX0mz3OOGdSbgR/view?usp=sharing
 
